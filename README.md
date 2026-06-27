@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 💊 SmartPharmacy + Context-Aware Medical Chatbot
 
 **SmartPharmacy** is a full-stack E-Pharmacy application containing a deeply integrated, intelligent Medical Chatbot. The backend acts as an Artificial Intelligence Pharmacist capable of mapping sophisticated conversational symptoms directly to inventory, managing customer delivery protocols, mitigating life-threatening warnings, and persisting multi-turn conversation memory contexts across operations.
@@ -50,3 +51,7 @@ Open **[http://127.0.0.1:5000](http://127.0.0.1:5000)** in your browser and try 
 
 ---
 *Disclaimer: This codebase is designed to emulate advanced technical NLP features inside e-commerce for educational engineering purposes. Do not replace live human medical diagnosis with this AI.*
+=======
+# Smart_Assist-Chatbot
+SmartPharmacy is a full-stack AI-powered e-pharmacy platform featuring an intelligent medical chatbot that analyzes symptoms, recommends medicines from inventory, provides safety warnings, manages deliveries, and maintains multi-turn conversation context for personalized healthcare assistance.
+>>>>>>> e0720042a6f2f162ad0e468ca76e1aa09eb54771

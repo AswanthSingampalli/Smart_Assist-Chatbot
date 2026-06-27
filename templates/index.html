@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartPharmacy Online</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="#0077b6">
+                <path
+                    d="M17 6V4L15 2H9L7 4v2H3v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V6h-4zm-5 10h-2v-2H8v-2h2v-2h2v2h2v2h-2v2z" />
+            </svg>
+            SmartPharmacy
+        </a>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#medicines">Medicines</a>
+            <a href="#">Vitamins</a>
+            <a href="#">Prescriptions</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1>Your Trusted Online Pharmacy</h1>
+        <p>Order over-the-counter medicines, vitamins, and healthcare essentials with completely free and fast home
+            delivery.</p>
+        <a href="#medicines" class="btn"
+            onclick="toggleChatIfClosed(); sendQuickReply('I want to buy some medicine')">Consult Web Pharmacist</a>
+    </header>
+
+    <!-- MEDICINES SECTION -->
+    <section id="medicines" class="products-section">
+        <h2>Over-the-Counter Essentials</h2>
+        <div class="grid">
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Paracetamol 500mg</h3>
+                    <p class="price">Fast relief for fever and headaches. 24 Pack.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Paracetamol 500mg'); toggleChatIfClosed();">Order via AI
+                        ($5.99)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1550572017-edb787fc207a?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Vitamin C Complex</h3>
+                    <p class="price">Boost your immune system natively. 60 Tablets.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Vitamin C Complex'); toggleChatIfClosed();">Order via AI
+                        ($14.50)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1603398938378-e54e491ee922?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Premium First Aid Kit</h3>
+                    <p class="price">Essential emergency supplies for home travel.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Premium First Aid Kit'); toggleChatIfClosed();">Order via AI
+                        ($29.99)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Allergy Relief (General)</h3>
+                    <p class="price">Non-drowsy antihistamines for seasonal allergies.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Allergy Relief'); toggleChatIfClosed();">Order via AI
+                        ($18.00)</button>
+                </div>
+            </div>
+            <!-- Added Products beneath -->
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://plus.unsplash.com/premium_photo-1675715923985-7925e0bcfa51?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Ibuprofen 400mg</h3>
+                    <p class="price">Targeted anti-inflammatory for muscle and joint pain.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Ibuprofen 400mg'); toggleChatIfClosed();">Order via AI
+                        ($7.50)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1549429158-9418a00508a8?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Melatonin 5mg Gummies</h3>
+                    <p class="price">Natural, fast-acting sleep aid for restful nights.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Melatonin Gummies'); toggleChatIfClosed();">Order via AI
+                        ($12.99)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1584017911766-d451b3d0e843?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Digital Thermometer</h3>
+                    <p class="price">Fast, accurate reading oral and underarm thermometer.</p>
+                    <button class="add-to-cart"
+                        onclick="sendQuickReply('buy Digital Thermometer'); toggleChatIfClosed();">Order via AI
+                        ($15.00)</button>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img"
+                    style="background-image: url('https://images.unsplash.com/photo-1628771065518-0d82f1938462?w=500&h=400&fit=crop');">
+                </div>
+                <div class="product-info">
+                    <h3>Cough Syrup (Expectorant)</h3>
+                    <p class="price">Maximum strength relief for chest congestion and cough.</p>
+                    <button class="add-to-cart" onclick="sendQuickReply('buy Cough Syrup'); toggleChatIfClosed();">Order
+                        via AI ($9.45)</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 SmartPharmacy Delivery Network. All Rights Reserved. If symptoms persist, consult a doctor
+            offline.</p>
+    </footer>
+
+    <!-- CHATBOT TOGGLE BUTTON -->
+    <div class="chat-toggle-btn" onclick="toggleChat()">
+        <!-- Pill SVG -->
+        <svg viewBox="0 0 24 24">
+            <path
+                d="M16 3H8C5.24 3 3 5.24 3 8v8c0 2.76 2.24 5 5 5h8c2.76 0 5-2.24 5-5V8c0-2.76-2.24-5-5-5zm-2.5 14H12v-2.5H9.5v-2H12V10h1.5v2.5H16v2h-2.5V17z" />
+        </svg>
+    </div>
+
+    <!-- CHATBOT WIDGET -->
+    <div class="chat-container" id="chatWidget">
+        <div class="chat-header">
+            <h2>
+                <span class="bot-avatar" style="background:#00b4d8;">💊</span>
+                Pharmacy Assistant
+            </h2>
+            <div onclick="toggleChat()" style="cursor:pointer; font-size:1.6rem; line-height:1;">&times;</div>
+        </div>
+
+        <div id="chat" class="chat-window">
+            <div class="message-row">
+                <div class="bot-avatar" style="background:#e0fbfc; display:none;"></div>
+                <div class="message bot">Hello! I am your Pharmacy Assistant. I can help you order medicines, check
+                    stock, or track your delivery. How are you feeling today?</div>
+            </div>
+            <div class="quick-replies" style="padding-left:10px;">
+                <button class="quick-reply-btn" onclick="sendQuickReply('Buy Medicine')">Order Medicine</button>
+                <button class="quick-reply-btn" onclick="sendQuickReply('Track my delivery')">Track Delivery</button>
+                <button class="quick-reply-btn" onclick="sendQuickReply('show symptoms')">Symptom Checker</button>
+            </div>
+        </div>
+
+        <div class="chat-input-container">
+            <input type="text" id="msg" placeholder="Search medicine or describe issue..."
+                onkeypress="handleKeyPress(event)">
+            <button onclick="send()">
+                <svg viewBox="0 0 24 24">
+                    <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const chatWindow = document.getElementById("chat");
+        const chatWidget = document.getElementById("chatWidget");
+
+        function toggleChat() {
+            chatWidget.classList.toggle("active");
+            if (chatWidget.classList.contains("active")) {
+                chatWindow.scrollTop = chatWindow.scrollHeight;
+            }
+        }
+
+        function toggleChatIfClosed() {
+            if (!chatWidget.classList.contains("active")) {
+                toggleChat();
+            }
+        }
+
+        function handleKeyPress(e) {
+            if (e.key === "Enter") send();
+        }
+
+        function appendUserMessage(text) {
+            let row = document.createElement("div");
+            row.className = "message-row user";
+            row.innerHTML = `<div class="message user">${text}</div>`;
+            chatWindow.appendChild(row);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+
+        function appendBotMessage(htmlContent) {
+            let row = document.createElement("div");
+            row.className = "message-row";
+            row.innerHTML = `
+                <div class="message bot">${htmlContent}</div>
+            `;
+            chatWindow.appendChild(row);
+            chatWindow.scrollTop = chatWindow.scrollHeight;
+        }
+
+        function sendQuickReply(text) {
+            let inputField = document.getElementById("msg");
+            inputField.value = text;
+            send();
+        }
+
+        async function send() {
+            let msgInput = document.getElementById("msg");
+            let text = msgInput.value.trim();
+            if (!text) return;
+            msgInput.value = "";
+
+            appendUserMessage(text);
+
+            try {
+                let res = await fetch("/chat", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ user_id: "patient_1", message: text })
+                });
+
+                let data = await res.json();
+                appendBotMessage(data.response);
+            } catch (err) {
+                appendBotMessage("Error connecting to SmartPharmacy server.");
+            }
+        }
+    </script>
+</body>
+
+</html>
